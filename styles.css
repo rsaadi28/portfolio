@@ -201,7 +201,7 @@ header nav ul {
   color: var(--preto-titulo);
   border-color: #000;
   border-style: solid;
-  border-width: .1px;
+  border-width: 0.1px;
 }
 
 .nextJs {
@@ -295,6 +295,7 @@ header nav ul {
 
 .conteudo-trabalhos {
   text-align: center;
+  margin-top: 3em;
 }
 
 .conteudo-trabalhos ul {
@@ -306,10 +307,11 @@ header nav ul {
   border-radius: 10px;
   box-shadow: var(--sombra);
   padding: 1em;
+  margin-bottom: 3em;
 }
 
 .conteudo-trabalhos img {
-  border-radius: 10%;
+  border-radius: 15px;
 }
 
 .conteudo-trabalhos .trabalhos-imgs {
@@ -425,12 +427,38 @@ header nav ul {
 }
 
 /* SOBRE MIM */
+.conteudo-sobre-mim {
+  margin-bottom: 2em;
+}
+
 .conteudo-sobre-mim h2 {
   text-align: center;
 }
 
-.conteudo-sobre-mim p {
+.conteudo-sobre-mim .area {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   margin-bottom: 2em;
+  align-items: center;
+}
+
+.area:nth-child(2), .area:nth-child(4) {
+  flex-direction: column-reverse;
+}
+
+.area p {
+  text-align: justify;
+}
+
+.area img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.uva-logo {
+ background-color: #004b78;
+ padding: 2em;
 }
 
 /* CONTATO */
@@ -490,17 +518,17 @@ footer {
   padding: 1em;
 }
 
-footer .mapa-site h3{
+footer .mapa-site h3 {
   font-size: 14px;
 }
 
-footer .mapa-site ul{
-  list-style: none;  
+footer .mapa-site ul {
+  list-style: none;
 }
 
-footer .mapa-site ul li{
+footer .mapa-site ul li {
   font-size: 14px;
-  margin-top: .3em;
+  margin-top: 0.3em;
 }
 
 footer .creditos {
@@ -585,6 +613,10 @@ footer .redes-sociais a img {
   }
 
   .conteudo-experiencias ul li {
+    flex-direction: row;
+  }
+
+  .conteudo-sobre-mim .area {
     flex-direction: row;
   }
 

@@ -492,7 +492,7 @@
     </main>
     <footer>
         <div class="mapa-site">
-            <h3>Mapa</h3>
+            <h3>Mapa:</h3>
             <ul>
                 <li><a href="#recursos">Habilidades</a></li>
                 <li><a href="#experiencias">Experiências</a></li>
@@ -525,8 +525,6 @@
         const formData = new FormData(event.target); // Captura os dados do formulário
         const data = Object.fromEntries(formData.entries()); // Converte para um objeto
 
-        console.log(data.nome);
-        console.log(data.email);
         if (data.nome && data.email)
             fetch('https://afternoon-depths-23966-9a65a4b30c75.herokuapp.com/send', {
                 method: 'POST',

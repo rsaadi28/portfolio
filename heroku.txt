@@ -1,0 +1,8 @@
+subir para a branch da heroku:
+git push heroku main
+
+ver quantos dynos estão ativos:
+heroku ps
+
+Escalar dynos
+heroku ps:scale web=0

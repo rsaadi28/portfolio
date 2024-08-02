@@ -114,6 +114,10 @@ header nav {
   align-items: center;
 }
 
+header nav h1{
+  font-size: 22px;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
@@ -211,6 +215,7 @@ header nav ul {
 
 .mini-desc {
   width: 100%;
+  margin-top: .3em;;
 }
 
 /* SESSÃO: TODOS OS CONTEUDOS */
@@ -357,10 +362,11 @@ header nav ul {
   align-items: center;
   font-size: 16px;
   gap: 0.5em;
-  margin-bottom: 1.5em;
   box-shadow: var(--sombra);
   padding: 1.2em;
   border-radius: 10px;
+  width: 80%;
+  margin: 1.5em auto;
 }
 
 .conteudo-experiencias ul img {
@@ -523,7 +529,7 @@ footer .mapa-site h3 {
 }
 
 footer .mapa-site ul {
-  list-style: none;
+  list-style: disc;
 }
 
 footer .mapa-site ul li {
@@ -580,6 +586,10 @@ footer .redes-sociais a img {
     border-bottom-right-radius: 10px;
   }
 
+  header nav h1{
+    font-size: 32px;
+  }
+
   .home {
     width: 50%;
     padding: 2em;
@@ -614,6 +624,7 @@ footer .redes-sociais a img {
 
   .conteudo-experiencias ul li {
     flex-direction: row;
+    width: 100%;
   }
 
   .conteudo-sobre-mim .area {
